@@ -1,0 +1,25 @@
+{
+    "name": "application-name",
+    "version": "0.0.1",
+    "main": "app.js",
+    "description": "fooling aroud",
+    "scripts": {
+	"start": "node app.js"
+    },
+    "dependencies": {
+      "express": "latest",
+      "body-parser": "latest",
+      "errorhandler": "latest",
+      "method-override": "latest",
+      "stylus": "latest",
+      "jade": "latest",
+      "mongodb": "latest"
+    },
+    "engines": {
+	"node": "0.12.x",
+	"npm": "2.5.x"
+    },
+    "repository": {
+	"type": "git"
+    }
+}
