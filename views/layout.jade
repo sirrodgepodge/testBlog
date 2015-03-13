@@ -1,7 +1,9 @@
 doctype
-html(lang = "en")
+html(ng-app='bawss',lang = "en")
   head
     title= title
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
   body
     block content
+    script(type='text/javascript', src='/js/vendor/angular.js')
+    script(type='text/javascript', src='/js/app.js')
