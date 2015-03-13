@@ -3,11 +3,11 @@ extends ./layout.jade
 block content
   h1= title
   input(ng-model="search")
-  #articles(ng-repeat="article in articles")
-      div.article
-        div.created_at= article.created_at
+  #articles
+      div(ng-repeat="article in articles")
+        div.created_at= {{article.created_at}}
         div.title
-          a(href="/blog/"+article._id)!= article.title
-        div.body= article.body
+          a(href="/blog/"+{{article._id}})!= {{article.title}}
+        div.body= {{article.body}}
     a(href="/blog/new" ng-controller="StoreController as store")
       button New
