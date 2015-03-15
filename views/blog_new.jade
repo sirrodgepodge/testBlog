@@ -2,13 +2,12 @@ extends ./layout.jade
 
 block content
   h1= title
-  form(method="post")
+  form(method="post", action="/blog/new")
     div
-        div
-            span Title :
-            input(type="text", name="title", id="editArticleTitle")
-        div
-            span Body :
-            textarea(name="body", rows=20, id="editArticleBody")
-        dev#editArticleSubmit
-            input(type="submit", value="Post")
+      span Title :
+        input(type="text", name="title", id="editArticleTitle")
+    div
+      span Body :
+        textarea(name="body", rows=20, id="editArticleBody")
+    div#editArticleSubmit
+      input(type="submit", value="Post")

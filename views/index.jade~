@@ -2,8 +2,7 @@ extends ./layout.jade
 
 block content
   h1= title
-  span Search :
-    input(ng-model="search.title")
+  input(ng-model="search.title")
   #articles(ng-init="articles= #{JSON.stringify(articles)}")
     div.article(ng-repeat="article in articles | filter: search")
       div.created_at {{article.created_at}}
