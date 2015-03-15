@@ -33,7 +33,7 @@ MongoClient.connect('mongodb://bossy:bossy@ds047581.mongolab.com:47581/bawss?con
 		articleProvider.findAll(function(error,docs){
 			res.render('index.jade', {
 				    title: 'Blog',
-				    articles:docs
+				    articles: docs
 			    });
 		    });
 	    });
@@ -49,7 +49,7 @@ MongoClient.connect('mongodb://bossy:bossy@ds047581.mongolab.com:47581/bawss?con
 			    title: req.body.title,
 			    body: req.body.body
 			    },
-		    function( error, docs) {
+		    function(error, docs) {
 			res.redirect('/');
 		    });
 	    });
